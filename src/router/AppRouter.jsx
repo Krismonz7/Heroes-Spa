@@ -9,8 +9,6 @@ export const AppRouter = () => {
 return (
     <div>
 
-        <Navbar/>
-
         <div className="container">
         <Routes>
             <Route path='/login' element={<Login/>}></Route>
