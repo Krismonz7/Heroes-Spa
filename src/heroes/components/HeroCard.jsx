@@ -21,13 +21,14 @@ export const HeroCard = ({
 
   return (
   <div 
-  className="card text-dark row no-gutters col-3 m-4 d-center"
+  className="card text-dark row no-gutters col-3 m-4 d-center animate__animated animate__fadeIn"
   onClick={navigateTo}
+  
   >
 
-<img src={`assets/heroes/${id}.jpg`} className="card-img-top" alt="..."/>
-      <div className="card-body">
-            <h5 className="card-title">{superhero}</h5>
+<img src={`assets/heroes/${id}.jpg`} className="card-img-top animate__animated animate__bounceInUp" alt="..."/>
+      <div className="card-body ">
+            <h5 className="card-title ">{superhero}</h5>
             <p className="card-text">{alter_ego}</p>
               <CaracterByHeroes alter_ego={alter_ego} characters={characters}/>
               <p className="card-text">
