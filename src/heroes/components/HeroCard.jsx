@@ -1,4 +1,4 @@
-import { Navigate,Link } from "react-router-dom"
+import { Navigate,Link, useNavigate } from "react-router-dom"
 
 const CaracterByHeroes = ({alter_ego,characters})=>{
 
@@ -13,9 +13,18 @@ export const HeroCard = ({
     superhero,
     id
 }) => {
+  const navigate = useNavigate();
+
+  const navigateTo = ()=>{
+    navigate(`/hero/${id}`);
+  }
 
   return (
-<div className="card text-dark row no-gutters col-3 m-4 d-center" >
+  <div 
+  className="card text-dark row no-gutters col-3 m-4 d-center"
+  onClick={navigateTo}
+  >
+
 <img src={`assets/heroes/${id}.jpg`} className="card-img-top" alt="..."/>
       <div className="card-body">
             <h5 className="card-title">{superhero}</h5>

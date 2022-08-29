@@ -7,7 +7,7 @@ export const Navbar = (props) => {
     const useNavegater = useNavigate();
 
     const onLogout = ()=>{
-        useNavegater('/marvel',{
+        useNavegater('/login',{
             replace:true
         })
     }

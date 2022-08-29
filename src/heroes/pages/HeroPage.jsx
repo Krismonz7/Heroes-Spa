@@ -1,5 +1,5 @@
 import React from 'react';
-import {useParams,Navigate} from 'react-router-dom';
+import {useParams,Navigate, useNavigate} from 'react-router-dom';
 import { getHeroById } from '../helpers';
 
 
@@ -17,20 +17,43 @@ export const HeroPage = () => {
   if(!hero){
 
     return<Navigate to={'/marvel'}/>
-    
+
   }
+
+  const navigate = useNavigate();
+  const onReturnBack = ()=>{
+    navigate(-1)
+  }
+
+  const {superhero,id,alter_ego,characters,publisher,first_appearance} = hero;
   return (
-    <div className="card bg-dark text-light row no-gutters col-3 m-4 d-center" >
-<img src={`assets/heroes/${hero.id}.jpg`} className="card-img-top" alt="..."/>
-      <div className="card-body">
-            <h5 className="card-title">{hero.superhero}</h5>
-            <p className="card-text">{hero.alter_ego}</p>
-              <CaracterByHeroes alter_ego={hero.alter_ego} characters={hero.characters}/>
-              <p className="card-text">
-                <small className="text-muted">{hero.first_appearance}</small>
-              </p>
+    <div className="d-flex container row mt-5 ml-auto mr-auto mb-5 text-light">
+
+      <div className="col-7 bg-dark rounded">
+      <img src={`/assets/heroes/${id}.jpg`} className="card-img-top mt-3 mb-3" alt={superhero}/> 
       </div>
 
-</div>
+      <div className="col-3 bg-dark m-auto rounded">
+
+        <h3>{superhero}</h3>
+        <ul className=' d-flex list-group p-4'>
+          <li>Aletr ego: <b>{alter_ego}</b></li>
+          <li>Publisher: <b>{publisher}</b></li>
+          <li>First appearence: <b>{first_appearance}</b></li>
+        </ul>
+
+        <h5>Characters</h5>
+        <p>{characters}</p>
+
+        <button 
+        className="btn btn-success mb-2 ml-auto mr-auto"
+        onClick={onReturnBack}
+        >
+          Regresar
+        </button>
+
+      </div>
+
+    </div>
   )
 }
