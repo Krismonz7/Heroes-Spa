@@ -5,13 +5,15 @@ const CaracterByHeroes = ({alter_ego,characters})=>{
   return (alter_ego === characters) ? null : <p>{characters}</p>
 }
 
+
+
 export const HeroCard = ({
     characters,
     first_appearance,
     alter_ego,
     publisher,
     superhero,
-    id
+    id 
 }) => {
   const navigate = useNavigate();
 

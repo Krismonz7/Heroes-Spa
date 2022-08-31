@@ -158,5 +158,13 @@ export const heroes = [
         'alter_ego':'Norrin Radd',
         'first_appearance':'The Fantastic Four #48',
         'characters':'Norrin Radd'
+    },
+    {
+        'id': 'marvel-gambit',
+        'superhero':'Gambit', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Undefined',
+        'first_appearance':'The x-men #77',
+        'characters':'Adam Gontier'
     }
 ]
