@@ -23,7 +23,7 @@ export const HeroPage = () => {
     <div className="d-flex container row mt-5 ml-auto mr-auto mb-5 text-light">
 
       <div className="col-7 bg-dark rounded">
-      <img src={`/assets/heroes/${id}.jpg`} className="card-img-top mt-3 mb-3" alt={superhero}/> 
+      <img src={`/assets/heroes/${id}.jpg`} className="card-img-top mt-3 mb-3 animate__animated animate__backInDown" alt={superhero}/> 
       </div>
 
       <div className="col-3 bg-dark m-auto rounded">

@@ -42,7 +42,7 @@ export const Navbar = (props) => {
                         className="nav-item nav-link" 
                         to="/search"
                     >
-                        search
+                        Search
                     </NavLink>
                     <NavLink 
                         className="nav-item nav-link" 
