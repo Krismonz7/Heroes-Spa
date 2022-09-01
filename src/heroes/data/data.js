@@ -163,8 +163,32 @@ export const heroes = [
         'id': 'marvel-gambit',
         'superhero':'Gambit', 
         'publisher':'Marvel Comics', 
-        'alter_ego':'Undefined',
+        'alter_ego':'Remy Etienne LeBeau',
         'first_appearance':'The x-men #77',
         'characters':'Adam Gontier'
+    },
+    {
+        'id': 'marvel-dead',
+        'superhero':'Dead Pool', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Wade Wilson',
+        'first_appearance':'New Mutants #98',
+        'characters':'Adam Rainolds'
+    },
+    {
+        'id': 'marvel-spider-2099',
+        'superhero':'Spider-man 2099', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Miguel OHara',
+        'first_appearance':'The Amazing Spider-Man #365',
+        'characters':'Evans'
+    },
+    {
+        'id': 'marvel-star',
+        'superhero':'Star lord', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Peter Quill',
+        'first_appearance':'Guardians of the galaxy #17',
+        'characters':'Chris Pratt'
     }
 ]

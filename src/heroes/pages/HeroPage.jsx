@@ -26,7 +26,7 @@ export const HeroPage = () => {
       <img src={`/assets/heroes/${id}.jpg`} className="card-img-top mt-3 mb-3 animate__animated animate__backInDown" alt={superhero}/> 
       </div>
 
-      <div className="col-3 bg-dark m-auto rounded">
+      <div className="col-3 bg-dark m-auto ">
 
         <h3>{superhero}</h3>
         <ul className=' d-flex list-group p-4'>

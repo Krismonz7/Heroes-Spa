@@ -7,7 +7,7 @@ const CaracterByHeroes = ({alter_ego,characters})=>{
 
 
 
-export const HeroCard = ({
+export const HeroCardSearch = ({
     characters,
     first_appearance,
     alter_ego,
@@ -23,7 +23,7 @@ export const HeroCard = ({
 
   return (
   <div 
-  className="card bg-dark text-light no-gutters col-3 ml-4 mr-4 mt-4 mb-4  d-center animate__animated animate__fadeIn"
+  className="card bg-dark text-light no-gutters col-3 ml-3 mr-3 mt-3 mb-3  d-center animate__animated animate__fadeIn"
   onClick={navigateTo}
   
   >
