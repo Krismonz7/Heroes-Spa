@@ -9,6 +9,10 @@ import { MarvelPage } from '../pages/MarvelPage'
 
 
 export const HeroesRoutes = () => {
+
+    
+
+
     return (
     <>
     <Navbar/>    
@@ -18,7 +22,6 @@ export const HeroesRoutes = () => {
         <Route path="dc" element={<DcPage />} />
         <Route path='search' element={<SearchPage/>}></Route>
         <Route path='hero/:heroId' element={<HeroPage/>}></Route>
-        {/*Search, Hero by id */}
         <Route path='login' element={<Login/>}></Route>
         <Route path='/' element={<Navigate to={'marvel'}/>}></Route>
     </Routes>

@@ -2,7 +2,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 
 
-export const Navbar = (props) => {
+export const Navbar = () => {
 
     const useNavegater = useNavigate();
 
@@ -10,7 +10,7 @@ export const Navbar = (props) => {
         useNavegater('/login',{
             replace:true
         })
-    }
+    };
 
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
