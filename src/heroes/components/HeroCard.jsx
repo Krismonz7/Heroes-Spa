@@ -28,7 +28,7 @@ export const HeroCard = ({
   
   >
 
-<img src={`assets/heroes/${id}.jpg`} className="card-img-top  mt-2 animate__animated animate__bounceInUp" alt="..."/>
+<img src={`./assets/heroes/${id}.jpg`} className="card-img-top  mt-2 animate__animated animate__bounceInUp" alt="..."/>
       <div className="card-body ">
             <h5 className="card-title ">{superhero}</h5>
             <p className="card-text">{alter_ego}</p>
